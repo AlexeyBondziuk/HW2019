@@ -1,0 +1,115 @@
+
+.calc-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+.mainWindow {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+
+    min-height: 400px;
+    min-width: 510px;
+    max-width: 680px;
+    border: 1px solid black;
+    background-color: #343231;
+    border-radius: 10px;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+ }
+.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+span {
+    padding-bottom: 5px;
+    color: #cccccc;
+    font-style: italic;
+    margin: 0 0 0 auto;
+}
+
+.displayWindow {
+    display: flex;
+    background-color: #b8c6a3;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: larger;
+}
+
+.angles {
+    color: #cccccc;
+    width: 50%;
+    margin: 20px 0 20px 0;
+}
+
+.memory {
+    margin: 15px 0 15px 0;
+    background-color: #5c5a55;
+    min-height: 15%;
+    width: 45%;
+    padding: 2px;
+    color: #cccccc;
+}
+
+
+.left-column {
+    display: flex;
+    flex-wrap: wrap;
+    width:40%;
+    max-width: 270px;
+    min-width: 230px;
+    /*border: 1px solid black;*/
+}
+
+.right-column {
+    display: flex;
+    width:45%;
+    min-width: 275px;
+    max-width: 400px;
+    /*border: 1px solid black;*/
+}
+
+.right-right-column {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 20%;
+    /*max-width: 100px;*/
+}
+
+.right-left-column {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 80%;
+
+}
+
+button {
+    flex: 1 1 35px;
+    align-self: flex-start;
+    border: 1px solid black;
+    background-color: #1c1a19;
+    border-radius: 10px;
+    min-height: 30px;
+    min-width: 50px;
+    margin: 10px  5px 0 0;
+    color: #dddddd;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.big {
+    min-height: 70px;
+
+}
