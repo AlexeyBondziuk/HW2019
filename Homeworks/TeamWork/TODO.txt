@@ -1,0 +1,3 @@
+Тестировать ToDoList
+CRUD таблицы с базой данных на React
+CRUD таблицы с базой данных на React + ToDoList с базой

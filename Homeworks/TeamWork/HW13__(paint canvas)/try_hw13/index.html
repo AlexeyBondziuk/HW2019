@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW13</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styleDropDown.css" rel="stylesheet">
+    <link href="css/styleCanvas.css" rel="stylesheet">
+</head>
+<body>
+    <div class="mainWindow">
+        <div class="dropdown">
+            <button id="mainmenubtn" class="mainmenubtn"><img src="./source/hw13.png" /></button>
+            <div class="dropdown-child">
+                <button class="">Language</button>
+                <button class="">Theme</button>
+            </div>
+        </div>
+        <form class="tools-form">
+            <button class="brush">Brush</button>
+            <button class="size">Size</button>
+            <button class="blur">Blur</button>
+            <input type = 'color' id = 'color'>
+        </form>
+        <div class="figures"></div>
+        <div id="canvasDiv" class="drawingBox"></div>
+        <div class="layers"></div>
+    </div>
+    <script src="./src/canvas.js"></script>
+</body>
+</html>

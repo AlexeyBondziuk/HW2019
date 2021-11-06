@@ -1,0 +1,9 @@
+canvas {
+    background-color:#eee;
+    border: 1px solid #ccc;
+}
+
+#divDraw {
+    display: flex;
+    justify-content: center;
+}

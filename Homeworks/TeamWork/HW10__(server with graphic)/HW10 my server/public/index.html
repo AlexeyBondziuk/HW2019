@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static</title>
+</head>
+<body>
+    <h1>Index page</h1>
+
+    <div id="foo"></div>
+    <script>
+        // 2.websocket на express
+       const ws = new WebSocket('ws://localhost:3000/ws'); //Чтобы подключиться нам нужно использоваь объект websocket на стороне клиента
+                                // ws: - говорит, что мы хотим не по http, а по websocket
+
+        // обработчики событий:
+        ws.onmessage = event => {
+            var a = event.data
+            document.getElementById('foo').innerHTML = a;
+            console.log(event.data);
+       };
+
+       ws.onopen = event => {
+           ws.send('message from clients'); // передаём на сервер данные
+       };
+
+       ws.onclose= event => {
+           console.log('closed')
+       }
+
+
+    </script>
+</body>
+</html>
